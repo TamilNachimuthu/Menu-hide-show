@@ -1,0 +1,210 @@
+body{
+    padding: 0;
+    margin: 0;
+}
+h1 {
+    padding: 0;
+    margin: 0;
+}
+.menuicon {
+    position: absolute;
+    z-index: 2;
+    margin-top: 10px;
+    right: 15px;
+}
+
+.activeclasss .hamburg1{
+    transform: rotate(45deg);
+}
+.activeclasss .hamburg2{
+    display: none;
+}
+.activeclasss .hamburg3{
+    transform: rotate(128deg);
+}
+ul {
+    list-style: none;
+    font-size: 15px;
+    font-family: sans-serif;
+    background-color: #17c0eb;
+    color: white;
+    line-height: 2.5;
+    height: 96vh;
+    margin: 0;
+    padding:0;
+    padding-top: 20px;    
+}
+ul li{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.205);
+    margin: 0;
+    color: white;
+}
+.bordernone{
+    border-bottom: none;
+}
+
+ul.mssgsubmenu li {
+    border-bottom: none;
+    line-height: 2.5;
+}
+ul.mssgsubmenu li {
+    padding: 3px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+li.profile, li.message, li.setting, li.logout{
+    padding: 5px;
+}
+
+
+.person {
+    width: 30px;
+    height: 20px;
+    left: 5px;
+    padding-right: 20px;
+    position: relative;
+    top: 3px;
+}
+.mssgsubmenu{
+    display: none;
+    /* position: absolute; */
+}
+.activemenu{
+    display: block;
+}
+.mssgtext::before {
+    content: " ";
+    position: absolute;
+    width: 5px;
+    height: 30px;
+    top: 6px;
+    left: 5px;
+    background-color: #17c0eb;
+    display: none;
+}
+.textspan{
+    padding-right: 80px;
+    cursor: pointer;
+}
+.mssgtext{
+    position: relative;
+}
+.mssgtext:hover::before{
+    display: block;
+}
+
+.paras{
+    position: relative;
+    left: 220px;
+}
+.profileh1{
+    margin-top: 0;
+}
+.clickpara{
+    display: none;
+}
+.clickpara.activecontent{
+    display: block;
+}
+.activeMenu li .textspan{
+    display: inline-block !important;
+}
+.activeMenu {
+    display: block;
+    position: relative;
+}
+.textspan{
+    display: none;
+    width: 20px;
+}
+.holemenu {
+    position: relative;
+    top: 25px;
+}
+.menuUL .mssgsubmenu {
+    padding: 0;
+    background-color: #333333;
+    height: 20vh;
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+.activeMenu  .mssgsubmenu  {
+    padding: 0;
+    background-color: #333333;
+    position: relative;
+    left: 0px;
+    top: 0;
+}
+
+.menuUL .vsape {
+    transform: rotate(90deg);
+    width: 30px;
+    height: 20px;
+    position: absolute;
+    top: 10px;
+    left: -8px;
+    color: #17c0eb;
+}
+.activeMenu .vsape {
+    transform: rotate(300deg);
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: -7px;
+    left: 4px;
+    color: #17c0eb;
+}
+.menuUL .holemenu .mssgsubmenu .new:hover::before{
+    display: none;
+
+}
+.menuUL.activeMenu .holemenu .mssgsubmenu .new:hover::before{
+    display: block;
+
+}
+.menubar {
+    position: absolute;
+}
+ion-icon.closeicon.md.hydrated {
+    position: absolute;
+    z-index: 1;
+    left: 130px;
+    top: 10px;
+}
+
+.activeMenu .menuicon {
+    margin-top: 15px;
+    cursor: pointer;
+    position:relative;
+    right: 10px;
+}
+.menuicon .hamburgermenu{
+    width: 18px;
+    height: 3px;
+    background-color: black;
+    margin: 3px 0px 0px 22px;
+    position: relative !important;;
+}
+.active .hamburg1 {
+    top: 7px;
+    transform: rotate(41deg);
+    position: absolute !important;
+    left: 152px;
+}
+.active .hamburg3 {
+    transform: rotate(133deg);
+    position: absolute !important;
+    top: 8px;
+    left: 152px;
+}
+.active .hamburg2{
+    background: transparent;
+}
+.activeclasss .hamburgermenu {
+    margin: -3px 3px 0px 5px;
+}
+.activeclasss.menuicon {
+    margin-top: 20px;
+    right: 10px;
+}
